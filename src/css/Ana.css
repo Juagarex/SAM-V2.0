@@ -1,3 +1,9 @@
 h1{
-    color: green;
+    font-size: 46px;
+    color: darkblue;
+    align-items: center;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+body{
+    background-image: linear-gradient(to right top, #2504c2, #0049d8, #006edf, #008edd, #65aad6);
 }
