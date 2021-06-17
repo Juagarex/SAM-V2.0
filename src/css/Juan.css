@@ -1,0 +1,26 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    
+    display: flex;
+    width: 100%;
+}
+
+.titulo{
+    display: flex;
+    width: 100%;
+}
+.tituloJuan{
+    position: absolute;
+    font-size: 40px;
+    margin: auto;
+    right: 50%;
+}
+
+.cabecera{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
