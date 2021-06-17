@@ -1,0 +1,25 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+}
+.cabecera_maria{
+position: relative;
+justify-content: center;
+ align-items: center;
+width: 100%;
+display: flex;
+}
+
+.titulo{
+    display: flex;
+    width: 100%;
+}
+.tituloMaria{
+    position: absolute;
+    font-size: 40px;
+    margin: auto;
+    right: 50%;
+
+}
