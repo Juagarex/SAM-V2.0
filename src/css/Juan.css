@@ -1,9 +1,17 @@
 html, body {
     margin: 0;
     padding: 0;
-    
     display: flex;
     width: 100%;
+    flex-direction: column;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 .titulo{
@@ -15,6 +23,9 @@ html, body {
     font-size: 40px;
     margin: auto;
     right: 50%;
+    animation: ease;
+    animation-name: slideinTitle;
+    animation-duration: 3s;
 }
 
 .cabecera{
@@ -23,4 +34,36 @@ html, body {
     width: 100%;
     justify-content: center;
     align-items: center;
+}
+
+.cubo{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    animation: ease-in-out;
+    animation-name: slidein;
+    animation-duration: 3s;
+    justify-content: center;
+    font-size: 40px;
+}
+
+
+
+/*animacion*/
+@keyframes slidein {
+    from {
+    margin-left: 100%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
+@keyframes slideinTitle {
+    from {
+    right: 100%;
+    }
+    to {
+        right:50%;
+    }
 }
