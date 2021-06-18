@@ -65,7 +65,7 @@ html, body {
 
 .cubo2{
     animation-name: slideup;
-    background-color: chartreuse;
+    background-color: violet;
 }
 
 .cubo2:hover{
