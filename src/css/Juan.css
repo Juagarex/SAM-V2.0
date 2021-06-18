@@ -46,6 +46,17 @@ html, body {
     animation-duration: 3s;
     justify-content: center;
     font-size: 40px;
+    align-items: flex-end;
+    transition: width 2s, height 2s, background-color 2s,transform 10s, aling-items 5s;
+}
+.cubo:hover{
+
+    background-color: burlywood;
+    width: 280px;
+    height: 280px;
+    transform: scale(0.5);
+    align-items: center;
+
 }
 
 
