@@ -48,10 +48,11 @@ html, body {
     justify-content: center;
     font-size: 40px;
     align-items: flex-start;
+    
 }
 
-.cubo1{transition: width 2s, height 2s, background-color 2s,transform 10s, aling-items 5s;}
-.cubo2{transition: width 2s, height 2s, background-color 2s,transform 10s, aling-items 5s;}
+.cubo1{transition: width 2s, height 2s, background-color 2s,transform 5s, opacity 6s; }
+.cubo2{transition: width 2s, height 2s, background-color 2s,transform 5s,}
 
 
 
@@ -61,10 +62,11 @@ html, body {
     height: 280px;
     transform: scale(0.5);
     align-items: center;
+    opacity: 0;
 }
 
 .cubo2{
-    animation-name: slideup;
+    animation-name:;
     background-color: chartreuse;
 }
 
@@ -81,13 +83,20 @@ html, body {
     width: 50%;
     height: auto;
     animation: ease-in-out;
-    animation-name: slidein;
-    animation-duration: 3s;
+    animation-name: temblar;
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
     transition: transform 3s;
 }
 
 .michi:hover{
-    transform:rotate(50deg) ;
+    transform:rotate(360deg) ;
+}
+
+.cubo3{
+animation-iteration-count: infinite;
+animation-name: temblar;
+animation-duration: 3s;
 }
 
 
@@ -114,9 +123,25 @@ html, body {
 
 @keyframes slideup {
     from {
-        margin-top: -200%;
+        margin-top:100%;
     }
     to {
-        margin-top: 0%;
+        margin-top:0%;
+    }
+}
+
+@keyframes temblar {
+
+    0% {
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(20deg);
+    }
+    75%{
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform: rotate(0deg);
     }
 }
