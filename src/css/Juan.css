@@ -100,6 +100,37 @@ animation-duration: 3s;
 }
 
 
+.Menu{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+}
+.Menu ul{
+    display: flex;
+    width: min-content;
+    height: min-content;
+
+    justify-content: space-between;
+    align-items: center;
+    padding-inline-start: 0;
+}
+
+.Menu ul li{
+    background-color: #A9ECFF;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    width: auto;
+    padding: 10px 15px;
+    margin: 10px;
+    height: 90%;
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+
 
 
 
