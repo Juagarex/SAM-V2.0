@@ -83,7 +83,7 @@ html, body {
     width: 50%;
     height: auto;
     animation: ease-in-out;
-    animation-name: temblar;
+    animation-name: "";
     animation-iteration-count: infinite;
     animation-duration: 1s;
     transition: transform 3s;
