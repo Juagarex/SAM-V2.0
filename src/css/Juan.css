@@ -109,7 +109,6 @@ animation-duration: 3s;
     display: flex;
     width: min-content;
     height: min-content;
-
     justify-content: space-between;
     align-items: center;
     padding-inline-start: 0;
@@ -128,6 +127,76 @@ animation-duration: 3s;
     height: 90%;
     border-radius: 20px;
     border: 1px solid black;
+    transition: border 2s, background-color 2s, box-shadow 3s;
+}
+
+.Menu ul li:hover{
+    background-color: rgb(194, 194, 245);
+    border: 3px solid blue;
+    box-shadow:4px 4px 14px 0px  rgba(224, 19, 19, 0.41);
+}
+
+/*  section de giros*/
+
+#Giros{
+    display: flex;
+    width: 99%;
+    height: auto;
+    justify-content: space-around;
+    border: 1px solid red;
+
+}
+
+.card{
+    display: flex;
+    width: 160px;
+    height: 160px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #A9ECFF;
+    margin: 20px;
+}
+.card2{
+    display: flex;
+    width: 160px;
+    height: 160px;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    background-color: #A9ECFF;
+    margin: 20px;
+}
+
+.transiciones{
+    display: grid;
+    width: 99%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: auto;
+    column-gap: 10px;
+    row-gap: 15px;
+    border: 1px solid red;
+}
+
+@media screen and (min-width:421px) and (max-width:800px) {
+
+    .transiciones{
+        grid-template-columns:1fr 1fr;
+
+    }
+
+}
+@media screen and (min-width:375px) and (max-width:420px){
+
+    .transiciones{
+        grid-template-columns:1fr;
+
+    }
+
 }
 
 
