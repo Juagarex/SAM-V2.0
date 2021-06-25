@@ -1,0 +1,258 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.container{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo{
+    display: flex;
+    width: 100%;
+}
+.tituloJuan{
+    position: absolute;
+    font-size: 40px;
+    margin: auto;
+    right: 50%;
+    animation: ease;
+    animation-name: slideinTitle;
+    animation-duration: 3s;
+}
+
+.cabecera{
+    position: relative;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.cubo-P{
+    display: flex;
+    width: 200px;
+    height: 200px;
+    background-color: aqua;
+    animation: ease-in-out;
+    animation-name: slidein;
+    animation-duration: 3s;
+    justify-content: center;
+    font-size: 40px;
+    align-items: flex-start;
+    
+}
+
+.cubo1{transition: width 2s, height 2s, background-color 2s,transform 5s, opacity 6s; }
+.cubo2{transition: width 2s, height 2s, background-color 2s,transform 5s,}
+
+
+
+.cubo1:hover{
+    background-color: burlywood;
+    width: 280px;
+    height: 280px;
+    transform: scale(0.5);
+    align-items: center;
+    opacity: 0;
+}
+
+.cubo2{
+    background-color: chartreuse;
+}
+
+.cubo2:hover{
+    background-color: burlywood;
+    width: 280px;
+    height: 280px;
+    transform: scale(1);
+    align-items: center;
+}
+
+.michi{
+    display: flex;
+    width: 50%;
+    height: auto;
+    animation: ease-in-out;
+    animation-name: "";
+    animation-iteration-count: infinite;
+    animation-duration: 1s;
+    transition: transform 3s;
+}
+
+.michi:hover{
+    transform:rotate(360deg) ;
+}
+
+.cubo3{
+animation-iteration-count: infinite;
+animation-name: temblar;
+animation-duration: 3s;
+}
+
+
+.Menu{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+}
+.Menu ul{
+    display: flex;
+    width: min-content;
+    height: min-content;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline-start: 0;
+}
+
+.Menu ul li{
+    background-color: #A9ECFF;
+    display: flex;
+    align-items: center;
+    list-style: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    width: auto;
+    padding: 10px 15px;
+    margin: 10px;
+    height: 90%;
+    border-radius: 20px;
+    border: 1px solid black;
+    transition: border 2s, background-color 2s, box-shadow 3s;
+}
+
+.Menu ul li:hover{
+    background-color: rgb(194, 194, 245);
+    border: 3px solid blue;
+    box-shadow:4px 4px 14px 0px  rgba(224, 19, 19, 0.41);
+}
+
+/*  section de giros*/
+
+#Giros{
+    display: flex;
+    width: 99%;
+    height: auto;
+    justify-content: space-around;
+    border: 1px solid red;
+
+}
+
+.card{
+    display: flex;
+    width: 160px;
+    height: 160px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #A9ECFF;
+    margin: 20px;
+}
+.card2{
+    display: flex;
+    width: 160px;
+    height: 160px;
+    justify-content: center;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+    text-align: center;
+    background-color: #A9ECFF;
+    margin: 20px;
+    transition: transform;
+}
+
+.transiciones{
+    display: grid;
+    width: 99%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: center;
+    align-items: center;
+    grid-template-rows: auto;
+    column-gap: 10px;
+    row-gap: 15px;
+    border: 1px solid red;
+}
+
+@media screen and (min-width:421px) and (max-width:800px) {
+
+    .transiciones{
+        grid-template-columns:1fr 1fr;
+
+    }
+
+}
+@media screen and (min-width:375px) and (max-width:420px){
+
+    .transiciones{
+        grid-template-columns:1fr;
+
+    }
+
+}
+
+
+
+
+
+/* animacion */
+@keyframes slidein {
+    from {
+    margin-left: 100%;
+    }
+    to {
+        margin-left: 0%;
+    }
+}
+@keyframes slideinTitle {
+    from {
+    right: 100%;
+    }
+    to {
+        right:50%;
+    }
+}
+
+@keyframes slideup {
+    from {
+        margin-top:100%;
+    }
+    to {
+        margin-top:0%;
+    }
+}
+
+@keyframes temblar {
+
+    0% {
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(20deg);
+    }
+    75%{
+        transform: rotate(-20deg);
+    }
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+
+/*Giros*/
+
+.Giro_completo:hover{
+    transform: rotate(360deg);
+}
+
+.Giro_completo_left:hover{
+    transform: rotate(-360deg);
+}
