@@ -131,7 +131,7 @@ animation-duration: 3s;
 
 .Menu ul li:hover{
     background-color: rgb(194, 194, 245);
-    border: 1px solid blue;
+    border: 3px solid blue;
     box-shadow:4px 4px 14px 0px  rgba(224, 19, 19, 0.41);
 }
 
@@ -167,7 +167,7 @@ animation-duration: 3s;
     text-align: center;
     background-color: #A9ECFF;
     margin: 20px;
-    transition: transform 3s;
+    transition: transform;
 }
 
 .transiciones{
@@ -188,6 +188,7 @@ animation-duration: 3s;
         grid-template-columns:1fr 1fr;
 
     }
+
 }
 @media screen and (min-width:375px) and (max-width:420px){
 
@@ -246,14 +247,12 @@ animation-duration: 3s;
 }
 
 
-
-
-/* Giros */
+/*Giros*/
 
 .Giro_completo:hover{
-transform: rotate(360deg);
- }
+    transform: rotate(360deg);
+}
 
- .Giro_completo_left:hover{
+.Giro_completo_left:hover{
     transform: rotate(-360deg);
- }
+}
