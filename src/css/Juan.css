@@ -1,3 +1,5 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:800);
+
 html, body {
     margin: 0;
     padding: 0;
@@ -288,4 +290,99 @@ transform: rotate(360deg);
 .slideRigth{
     animation-name: llegadaDerecha;
     animation-duration: 3s;
+}
+
+
+.Zoom, .animaciones{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border: 1px solid red ;
+    width: 50%;
+    padding: 20px 0;
+    column-gap: 10px;
+    row-gap: 15px;
+}
+
+.animaciones{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    width: 100%;
+
+}
+.TitleContainer{
+    display: flex;
+    width: 100%;
+    height: 200px;
+    position: relative;
+}
+
+
+#TitleAnimation{
+    color: hsla(0, 0%, 0%, .9);
+    font: normal 150px Varela Round, sans-serif;
+    height: 140px;
+    left: 0;
+    letter-spacing: 5px;
+    margin: -80px 0 0 0;
+    position: absolute;
+    text-align: center;
+    text-transform: uppercase;
+    top: 50%;
+    width: 100%;
+    animation: move linear 2000ms infinite;    
+}
+
+@keyframes move {
+    0% {
+        text-shadow: 4px -4px 0 hsla(0, 100%, 50%, 1),
+                    3px -3px 0 hsla(0, 100%, 50%, 1),
+                    2px -2px 0 hsla(0, 100%, 50%, 1),
+                    1px -1px hsla(0, 100%, 50%, 1),
+                    -4px 4px 0 hsla(180, 100%, 50%, 1),
+                    -3px 3px 0 hsla(180, 100%, 50%, 1),
+                    2px -2px 0 hsla(180, 100%, 50%, 1),
+                    -1px 1px 0 hsla(180, 100%, 50%, 1);
+    }
+    25% {
+        text-shadow: -4px -4px 0 hsla(180, 100%, 50%, 1),
+                    -3px -3px 0 hsla(180, 100%, 50%, 1),
+                    -2px -2px 0 hsla(180, 100%, 50%, 1),
+                    -1px -1px 0 hsla(180, 100%, 50%, 1),
+                    4px -4px 0 hsla(0, 100%, 50%, 1),
+                    3px -3px 0 hsla(0, 100%, 50%, 1),
+                    2px -2px 0 hsla(0, 100%, 50%, 1),
+                    1px -1px hsla(0, 100%, 50%, 1);
+    }
+    50%{
+        text-shadow: -4px 4px 0 hsla(0, 100%, 50%, 1),
+                    -3px 3px 0 hsla(0, 100%, 50%, 1),
+                    -2px 2px 0 hsla(0, 100%, 50%, 1),
+                    -1px 1px hsla(0, 100%, 50%, 1),
+                    4px -4px 0 hsla(180, 100%, 50%, 1),
+                    -3px -3px 0 hsla(180, 100%, 50%, 1),
+                    2px -2px 0 hsla(180, 100%, 50%, 1),
+                    1px -1px 0 hsla(180, 100%, 50%, 1);
+    }
+    75%{
+        text-shadow: 4px 4px 0 hsla(0, 100%, 50%, 1),
+                    3px 3px 0 hsla(0, 100%, 50%, 1),
+                    2px 2px 0 hsla(0, 100%, 50%, 1),
+                    1px 1px hsla(0, 100%, 50%, 1),
+                    -4px -4px 0 hsla(180, 100%, 50%, 1),
+                    -3px -3px 0 hsla(180, 100%, 50%, 1),
+                    -2px -2px 0 hsla(180, 100%, 50%, 1),
+                    -1px -1px 0 hsla(180, 100%, 50%, 1);
+    }
+    100%{
+        text-shadow:
+      4px -4px 0 hsla(0, 100%, 50%, 1), 
+      3px -3px 0 hsla(0, 100%, 50%, 1), 
+      2px -2px 0 hsla(0, 100%, 50%, 1), 
+      1px -1px 0 hsla(0, 100%, 50%, 1),
+      -4px 4px 0 hsla(180, 100%, 50%, 1), 
+      -3px 3px 0 hsla(180, 100%, 50%, 1), 
+      -2px 2px 0 hsla(180, 100%, 50%, 1), 
+      -1px 1px 0 hsla(180, 100%, 50%, 1)
+    ;
+    }
 }
